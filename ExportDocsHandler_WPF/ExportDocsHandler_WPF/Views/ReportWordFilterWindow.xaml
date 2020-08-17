@@ -1,0 +1,27 @@
+﻿<Window x:Class="ExportDocsHandler_WPF.Views.ReportWordFilterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExportDocsHandler_WPF.Views"
+        mc:Ignorable="d"
+        Title="Report Word Filter Window" Height="300" Width="450">
+    <Grid Margin="5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Orientation="Vertical" Grid.Column="0">
+            <TextBox FontSize="15" TextAlignment="Center" VerticalContentAlignment="Center" Text="{Binding WordToAdd, UpdateSourceTrigger=PropertyChanged}" Height="30" />
+            <Button Height="30" Content="Add" Command="{Binding UpdateWordsToFilterListCommand}" CommandParameter="Add"/>
+            <Button Height="30" Content="Remove" Command="{Binding UpdateWordsToFilterListCommand}" CommandParameter="Remove"/>
+        </StackPanel>
+        <DockPanel Grid.Column="0" VerticalAlignment="Bottom">
+            <Button Height="30" Content="Finish" Command="{Binding FinishWordFilteringCommand}" CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Window}}}" />
+        </DockPanel>
+
+        <ListView ItemsSource="{Binding WordsToFilter, UpdateSourceTrigger=PropertyChanged}" SelectedItem="{Binding WordToRemove,UpdateSourceTrigger=PropertyChanged}"  Grid.Column="1">
+        </ListView>
+    </Grid>
+</Window>

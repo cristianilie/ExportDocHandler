@@ -148,7 +148,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
             this.ClientSize = new System.Drawing.Size(416, 172);
-            this.Controls.Add(this.CloseFormButton);
             this.Controls.Add(this.FilterAndSortReportLabel);
             this.Controls.Add(this.RemoveButton);
             this.Controls.Add(this.WordsToExcludeListBox);

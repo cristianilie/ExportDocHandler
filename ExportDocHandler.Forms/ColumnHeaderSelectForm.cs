@@ -122,7 +122,7 @@ namespace ExportDocHandles
         /// </summary>
         private void FinishHeaderSelectionButton_Click(object sender, EventArgs e)
         {
-            if (documentType == DocumentType.PurchasingReport)
+            if (documentType == DocumentType.PurchaseReport)
                 DocumentModel_ColumnHeaders_List = docHandler.InitializeReportModelMapping(SelectedHeadersList);
             else
                 DocumentModel_ColumnHeaders_List = docHandler.InitializeInvoiceModelMapping(SelectedHeadersList);

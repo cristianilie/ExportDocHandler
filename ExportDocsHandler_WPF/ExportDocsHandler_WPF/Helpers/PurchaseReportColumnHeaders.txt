@@ -1,0 +1,5 @@
+﻿Product Code
+Purchased Quantity
+Document Date
+Supplier Name
+Purchase Invoice

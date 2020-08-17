@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EDH.Library", "EDH.Library\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExportDocsHandler", "ExportDocHandler.Forms\ExportDocsHandler.csproj", "{2F9D143D-3CA8-4E71-8844-ABE839D1B992}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExportDocsHandler_WPF", "ExportDocsHandler_WPF", "{281E2EFE-BC79-42A3-8AB5-5B4FB7407D28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExportDocsHandler_WPF", "ExportDocsHandler_WPF\ExportDocsHandler_WPF\ExportDocsHandler_WPF.csproj", "{DF38A1F3-D4CB-41CC-BF40-B18FD9544826}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +29,10 @@ Global
 		{2F9D143D-3CA8-4E71-8844-ABE839D1B992}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F9D143D-3CA8-4E71-8844-ABE839D1B992}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F9D143D-3CA8-4E71-8844-ABE839D1B992}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF38A1F3-D4CB-41CC-BF40-B18FD9544826}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF38A1F3-D4CB-41CC-BF40-B18FD9544826}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF38A1F3-D4CB-41CC-BF40-B18FD9544826}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF38A1F3-D4CB-41CC-BF40-B18FD9544826}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{C4E2CCFA-FE88-4304-A0CA-3098F2AAFDDF} = {AB1D664C-CBE7-480E-BF6C-8E03F817CD7C}
 		{2F9D143D-3CA8-4E71-8844-ABE839D1B992} = {4FE5064F-D815-4C49-8E5A-50F8866C15B2}
+		{DF38A1F3-D4CB-41CC-BF40-B18FD9544826} = {281E2EFE-BC79-42A3-8AB5-5B4FB7407D28}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C2D199D5-A708-4246-8E64-C8B52774301A}

@@ -158,8 +158,8 @@ namespace ExportDocHandles
             if (documentCreator.ValidateFields(AffidavitTitleTextBox.Text, AffidavitContentRichTextBox.Text, SalesAgentNameTextBox.Text, 
                                                                                         StampSignaturePathTextBox.Text, pathToSaveFiles))
             {
-                DocumentCreator createExporterStatement = new DocumentCreator();
-                createExporterStatement.CreateWordDocument("","",AffidavitTitleTextBox.Text, AffidavitContentRichTextBox.Text,"","", SalesAgentNameTextBox.Text,
+                DocumentCreator createAffidavitStatement = new DocumentCreator();
+                createAffidavitStatement.CreateWordDocument("","",AffidavitTitleTextBox.Text, AffidavitContentRichTextBox.Text,"","", SalesAgentNameTextBox.Text,
                                                                                                                 StampSignaturePathTextBox.Text, pathToSaveFiles);
             }
         }

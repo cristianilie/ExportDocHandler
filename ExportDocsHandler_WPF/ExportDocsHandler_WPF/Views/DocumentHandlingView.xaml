@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="ExportDocsHandler_WPF.Views.DocumentHandlingView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ExportDocsHandler_WPF.Views"
+             xmlns:vt="clr-namespace:ExportDocHandles;assembly=EDH.Library"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="850" Background="CornflowerBlue">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="36"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.ColumnSpan="2" Margin="1" HorizontalAlignment="Center">
+            <Button Margin="4 0 0 0" Content="Load Invoice" Command="{Binding LoadExcelContentCommand}" CommandParameter="{x:Static vt:DocumentType.SalesInvoice}"/>
+            <Button Margin="4 0 0 0" Content="Load Report" Command="{Binding LoadExcelContentCommand}" CommandParameter="{x:Static vt:DocumentType.PurchaseReport}"/>
+            <Button Margin="4 0 0 0" Content="Get Search Directory" Command="{Binding GetFolderPathCommand}" CommandParameter="Search" />
+            <Button Margin="4 0 0 0" Content="Report Word Filter" Command="{Binding OpenReportWordFilterWindowCommand}" />
+            <Button Margin="4 0 0 0" Content="Get Purchase Invoices" Command="{Binding GetPurchaseInvoicesCommand}" />
+            <Button Margin="4 0 0 0" Content="Move Files To" Command="{Binding GetFolderPathCommand}" CommandParameter="Move" />
+            <Button Margin="4 0 0 0" Content="Move Purchase Invoices" Command="{Binding MoveFilesCommand}"/>
+            <Button Margin="4 0 0 0" Content="Show Missing Invoices" Command="{Binding OpenMissingInvoicesWindowCommand}"/>
+        </StackPanel>
+
+        <DataGrid x:Name="SalesInvoiceDataGrid" ItemsSource="{Binding InvoiceContent, UpdateSourceTrigger=PropertyChanged}" Grid.Row="1" Grid.Column="0" Margin="2"/>
+        <DataGrid x:Name="PurchaseReportDataGrid" ItemsSource="{Binding PurchaseReportContent, UpdateSourceTrigger=PropertyChanged}" Grid.Row="1" Grid.Column="1" Margin="2"/>
+
+    </Grid>
+</UserControl>

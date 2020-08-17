@@ -3,6 +3,6 @@
     public enum DocumentType
     {
         SalesInvoice,
-        PurchasingReport
+        PurchaseReport
     }
 }

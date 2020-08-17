@@ -77,7 +77,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(463, 284);
-            this.Controls.Add(this.MissingDocumentsLabel);
+                
             this.Controls.Add(this.CopyButton);
             this.Controls.Add(this.OkButton);
             this.Controls.Add(this.MissingDocumentsRichTextBox);

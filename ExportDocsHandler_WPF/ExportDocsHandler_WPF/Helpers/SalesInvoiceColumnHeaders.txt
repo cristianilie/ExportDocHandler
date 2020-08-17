@@ -1,0 +1,4 @@
+﻿Product Code
+Quantity
+Product Name
+Country Of Origin

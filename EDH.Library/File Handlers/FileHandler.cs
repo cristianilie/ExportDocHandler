@@ -56,13 +56,6 @@ namespace ExportDocHandles
         {
             string path = "";
 
-            //CommonOpenFileDialog dialog = new CommonOpenFileDialog();
-            //dialog.InitialDirectory = "C:\\Desktop";
-            //dialog.IsFolderPicker = true;
-
-            //if (dialog.ShowDialog() == CommonFileDialogResult.Ok)
-            //    path = dialog.FileName;
-
             using (FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog())
             {
                 DialogResult dialogResult = folderBrowserDialog.ShowDialog();

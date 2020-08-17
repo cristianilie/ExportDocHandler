@@ -68,7 +68,7 @@ namespace ExportDocHandles
                 documentHeaders.Add(excelReportContent.Columns[i].ColumnName);
             }
 
-            columnHeaderSelectForm = new ColumnHeaderSelectForm(this, documentHeaders, DocumentType.PurchasingReport, docHandler);
+            columnHeaderSelectForm = new ColumnHeaderSelectForm(this, documentHeaders, DocumentType.PurchaseReport, docHandler);
             columnHeaderSelectForm.Show();
         }
 
